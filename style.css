@@ -12,7 +12,7 @@
   --bg-color: #080808;
   --seconde-bg-color: #131313;
   --text-color: white;
-  --main-color: #00ffee;
+  --main-color: #fb7ce6;
 }
 html {
   font-size: 60%;
@@ -21,6 +21,7 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  
 }
 .header {
   position: fixed;
@@ -107,8 +108,8 @@ span {
 .home-img img {
   position: relative;
   top: 3rem;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
@@ -335,13 +336,12 @@ span {
 
 .projets {
   background: var(--bg-color);
+  padding:100px;
 }
 .projets-box {
-  background-size: cover;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
+  gap: 8rem;
 }
 .projets .heading {
   margin-bottom: 5rem;
@@ -351,21 +351,14 @@ span {
   border-radius: 10%;
   border: 3px solid var(--main-color);
 }
-.wrapper {
-  display: flex;
-  gap: 8rem;
-}
 .projet-item {
-  min-height: 550px;
-  max-width: 550px;
   cursor: pointer;
 }
-.projet-item h2 {
+.projets-box h2 {
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 15px;
   font-size: 3rem;
+  justify-content: center;
 }
 .projet-item img:hover {
   box-shadow: 0 0 50px var(--main-color);
@@ -431,4 +424,49 @@ span {
     text-align: center;
     font-size: 16px;
     color: white;
+}
+
+
+@media (max-width:1285px){
+  html{
+    font-size: 55%;
+}}
+@media (max-width:991px){
+  header{
+    padding: 2rem 3%;
+  }
+  section{
+    padding: 10rem 3% 2rem;
+  }
+  .timeline-items::before{
+    left: 7px;
+  }
+  .timeline-item:nth-child(odd){
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even){
+    padding-left: 37px;
+  }
+  .timeline-dot{
+    left: 0;
+  }
+  .projets .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  .projet-item{
+    width: 400px;
+  }
+  .projet-item img{
+    width: 400px;
+  }
+  .footer{
+    padding: 2rem 3%;
+  }
+}
+@media(max-width:895px){
+
 }

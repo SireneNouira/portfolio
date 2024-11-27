@@ -341,13 +341,15 @@ span {
 .projets-box {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 8rem;
 }
+
 .projets .heading {
   margin-bottom: 5rem;
 }
 .projets-box img {
-  width: 50rem;
+  width: 65rem;
   border-radius: 10%;
   border: 3px solid var(--main-color);
 }
@@ -430,7 +432,11 @@ span {
 @media (max-width:1285px){
   html{
     font-size: 55%;
-}}
+}
+.projet-item img{
+  width: 350px;
+    }
+}
 @media (max-width:991px){
   header{
     padding: 2rem 3%;
@@ -452,21 +458,60 @@ span {
   .timeline-dot{
     left: 0;
   }
-  .projets .wrapper{
-    display: flex;
-    flex-wrap: wrap;
   
-  }
-  .projet-item{
-    width: 400px;
-  }
   .projet-item img{
-    width: 400px;
+width: 312px;
   }
   .footer{
     padding: 2rem 3%;
   }
 }
-@media(max-width:895px){
 
+@media(max-width:895px){
+  #menu-icon{
+    display: block;
+  }
+  .navbar{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 3%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    border-top-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2 px solid var(--main-color);
+    display: none;
+  }
+  .active{
+    display: block;
+  }
+  .navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: white;
+  }
+  .home{
+    flex-direction: column-reverse;
+    margin: 5rem 4rem;
+  }
+  .home-content h3{
+    font-size: 2.6rem;
+  }
+  .home-content h1{
+    font-size: 8rem;
+    margin-top: 3rem;
+  }
+  .home-content p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .home-img img{
+    width: 56vw;
+  }
+  .projet-item img{
+    width: 400px;
+      }
 }

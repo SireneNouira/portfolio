@@ -9,12 +9,22 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <script defer src="script.js"></script>
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/mode.js"></script>
+
     <title>Responsive POrtfolio</title>
   </head>
   <body>
     <header class="header">
-      <a href="#home" class="logo">Sirène <span>Nouira</span></a>
+      <div class="mode">
+        <svg  width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="myPath"
+           d="M15.5 27.5C15.5 42.6878 27.5 55 27.5 55C12.3122 55 0 42.6878 0 27.5C0 12.3122 12.3122 0 27.5 0C27.5 0 15.5 12.3122 15.5 27.5Z" fill="#ECC422"/>
+          </svg>
+          
+        <a href="#home" class="logo">Sirène <span>Nouira</span></a>
+      </div>
+        
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
         <a href="#home" class="active">Home</a>

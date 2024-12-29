@@ -49,6 +49,15 @@ body {
 .logo span {
   text-shadow: 0 0 25px var(--main-color);
 }
+.mode{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+ 
+}
+svg{
+   cursor: pointer;
+}
 .navbar a {
   font-size: 1.8rem;
   color: var(--text-color);
@@ -294,7 +303,7 @@ span {
 .timeline-date {
   font-size: 20px;
   font-weight: 800;
-  color: white;
+  color: var(--text-color);
   margin: 6px 0 15px;
 }
 .timeline-content {
@@ -312,12 +321,12 @@ span {
 }
 .timeline-content h3 {
   font-size: 20px;
-  color: white;
+  color: var(--text-color);
   margin: 0 0 10px;
   font-weight: 500;
 }
 .timeline-content p {
-  color: white;
+  color: var(--text-color);
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
@@ -410,7 +419,7 @@ span {
     text-align: center;
 }
 .footer ul li a{
-    color: white;
+    color: var(--text-color);
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
@@ -425,7 +434,7 @@ span {
     margin-top: 50px;
     text-align: center;
     font-size: 16px;
-    color: white;
+    color: var(--text-color);
 }
 
 
@@ -477,7 +486,7 @@ width: 312px;
     right: 0;
     width: 50%;
     padding: 1rem 3%;
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--seconde-bg-color);
     backdrop-filter: blur(20px);
     border-top-left-radius: 2rem;
     border-left: 2px solid var(--main-color);
@@ -491,7 +500,7 @@ width: 312px;
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
-    color: white;
+    color: var(--text-color);
   }
   .home{
     flex-direction: column-reverse;

@@ -21,7 +21,6 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
-  
 }
 .header {
   position: fixed;
@@ -49,14 +48,13 @@ body {
 .logo span {
   text-shadow: 0 0 25px var(--main-color);
 }
-.mode{
+.mode {
   display: flex;
   gap: 2rem;
   align-items: center;
- 
 }
-svg{
-   cursor: pointer;
+svg {
+  cursor: pointer;
 }
 .navbar a {
   font-size: 1.8rem;
@@ -345,7 +343,7 @@ span {
 
 .projets {
   background: var(--bg-color);
-  padding:100px;
+  padding: 100px;
 }
 .projets-box {
   display: flex;
@@ -378,7 +376,7 @@ span {
 }
 .contact {
   background-color: var(--seconde-bg-color);
-  padding: 50px 20px;
+  padding: 100px 20px 0px 20px;
   text-align: center;
 }
 .contact h2 {
@@ -388,12 +386,12 @@ span {
 
 .contact-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
   max-width: 800px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 .contact-info h3 {
   font-size: 2rem;
@@ -406,18 +404,16 @@ span {
 
 .contact-info li {
   margin: 15px 0;
-  font-size: 1.5rem; 
-  
+  font-size: 1.5rem;
 }
 
 .contact-info i {
   margin-right: 10px;
-  font-size: 1.8rem; 
- 
+  font-size: 1.8rem;
 }
 .contact-info a {
   color: var(--text-color);
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .contact-info a:hover {
@@ -427,12 +423,11 @@ span {
 /* Visuel et animation */
 .contact-visual h3 {
   font-size: 1.8rem;
-
 }
 
 .contact-visual p {
   font-size: 1.5rem;
- 
+
   margin: 10px 0 30px;
 }
 
@@ -459,7 +454,8 @@ span {
   animation-delay: 0.6s;
 }
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -467,6 +463,37 @@ span {
   }
 }
 
+/* avion papier */
+
+.paper-plane-animation {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper-plane {
+  bottom: 0;
+  animation: fly 5s infinite ease-in-out;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(-200px) translateY(0) rotate(0deg); /* Départ */
+  }
+  25% {
+    transform: translateX(0) translateY(-30px) rotate(20deg); /* Montée */
+  }
+  50% {
+    transform: translateX(50%) translateY(-50px) rotate(20deg); /* Point culminant */
+  }
+  75% {
+    transform: translateX(75%) translateY(-30px) rotate(30deg); /* Descente */
+  }
+  100% {
+    transform: translateX(100%) translateY(0) rotate(40deg); /* Arrivée */
+  }
+}
 
 .footer {
   position: relative;
@@ -499,77 +526,76 @@ span {
   color: black;
   box-shadow: 0 0 25px var(--main-color);
 }
-.footer ul{
-    margin-top: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
 }
-.footer ul li a{
-    color: var(--text-color);
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease-in-out;
+.footer ul li a {
+  color: var(--text-color);
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease-in-out;
 }
-.footer ul li a:hover{
-    border-bottom: 3px solid var(--main-color);
+.footer ul li a:hover {
+  border-bottom: 3px solid var(--main-color);
 }
-.footer ul li{
-    display: inline-block;
-    padding: 0 15px;
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
 }
-.footer .copyright{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 16px;
-    color: var(--text-color);
+.footer .copyright {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-color);
 }
 
-
-@media (max-width:1285px){
-  html{
+@media (max-width: 1285px) {
+  html {
     font-size: 55%;
+  }
+  .projet-item img {
+    width: 350px;
+  }
 }
-.projet-item img{
-  width: 350px;
-    }
-}
-@media (max-width:991px){
-  header{
+@media (max-width: 991px) {
+  header {
     padding: 2rem 3%;
   }
-  section{
+  section {
     padding: 10rem 3% 2rem;
   }
-  .timeline-items::before{
+  .timeline-items::before {
     left: 7px;
   }
-  .timeline-item:nth-child(odd){
+  .timeline-item:nth-child(odd) {
     padding-right: 0;
     text-align: left;
   }
   .timeline-item:nth-child(odd),
-  .timeline-item:nth-child(even){
+  .timeline-item:nth-child(even) {
     padding-left: 37px;
   }
-  .timeline-dot{
+  .timeline-dot {
     left: 0;
   }
-  
-  .projet-item img{
-width: 312px;
+
+  .projet-item img {
+    width: 312px;
   }
-  .footer{
+  .footer {
     padding: 2rem 3%;
   }
 }
 
-@media(max-width:895px){
-  #menu-icon{
+@media (max-width: 895px) {
+  #menu-icon {
     display: block;
   }
-  .navbar{
+  .navbar {
     position: absolute;
     top: 100%;
     right: 0;
@@ -582,23 +608,23 @@ width: 312px;
     border-bottom: 2 px solid var(--main-color);
     display: none;
   }
-  .active{
+  .active {
     display: block;
   }
-  .navbar a{
+  .navbar a {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
     color: var(--text-color);
   }
-  .home{
+  .home {
     flex-direction: column-reverse;
     margin: 5rem 4rem;
   }
-  .home-content h3{
+  .home-content h3 {
     font-size: 2.6rem;
   }
-  .home-content h1{
+  .home-content h1 {
     font-size: 8rem;
     margin-top: 3rem;
   }
@@ -606,10 +632,10 @@ width: 312px;
     max-width: 600px;
     margin: 0 auto;
   }
-  .home-img img{
+  .home-img img {
     width: 56vw;
   }
-  .projet-item img{
+  .projet-item img {
     width: 400px;
-      }
+  }
 }

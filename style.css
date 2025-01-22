@@ -378,7 +378,96 @@ span {
 }
 .contact {
   background-color: var(--seconde-bg-color);
+  padding: 50px 20px;
+  text-align: center;
 }
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto; 
+}
+.contact-info h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin: 15px 0;
+  font-size: 1.5rem; 
+  
+}
+
+.contact-info i {
+  margin-right: 10px;
+  font-size: 1.8rem; 
+ 
+}
+.contact-info a {
+  color: var(--text-color);
+  text-decoration: none; 
+}
+
+.contact-info a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+/* Visuel et animation */
+.contact-visual h3 {
+  font-size: 1.8rem;
+
+}
+
+.contact-visual p {
+  font-size: 1.5rem;
+ 
+  margin: 10px 0 30px;
+}
+
+/* Cercles animés */
+.animated-circles {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: var(--main-color);
+  animation: bounce 1.5s infinite;
+}
+
+.circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.circle:nth-child(3) {
+  animation-delay: 0.6s;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
 .footer {
   position: relative;
   bottom: 0;

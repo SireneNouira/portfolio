@@ -343,25 +343,38 @@ span {
 
 .projets {
   background: var(--bg-color);
-  padding: 100px;
+  padding: 0;
+  padding-bottom: 10rem;
 }
 .projets-box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 8rem;
+  gap: 5rem;
 }
 
 .projets .heading {
   margin-bottom: 5rem;
 }
-.projets-box img {
-  width: 65rem;
-  border-radius: 10%;
-  border: 3px solid var(--main-color);
+.projet-container {
+  width: 28%;
+  height: 500px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .projet-item {
-  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  border: 3px solid var(--main-color);
+  background-image: url("photo.jpeg");
+  background-repeat: no-repeat;
+  background-size: max(100%, 100%);
+  background-size: cover;
+  background-position: center;
 }
 .projets-box h2 {
   display: flex;
@@ -369,7 +382,7 @@ span {
   font-size: 3rem;
   justify-content: center;
 }
-.projet-item img:hover {
+.projet-item:hover {
   box-shadow: 0 0 50px var(--main-color);
   transform: translateY(-10px) scale(1.03);
   transition: 0.3s ease-in-out;
@@ -557,8 +570,59 @@ span {
   html {
     font-size: 55%;
   }
-  .projet-item img {
-    width: 350px;
+  .projets-box h2 {
+    font-size: 2rem;
+  }
+  .projet-container {
+    height: 400px;
+  }
+
+  .home-content {
+ 
+    h1 {
+      font-size: 3rem;
+
+    }
+   
+  }
+  .home-img img {
+    width: 300px;
+    height: auto;
+  
+  }
+
+  #education {
+ 
+    h2 {
+      font-size: 3rem;
+    }
+   h4{
+     font-size: 1.8rem;
+   }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .projets {
+
+
+    h2 {
+      font-size: 3rem;
+    }
+    min-height: 0;
+  }
+
+  .projets-box {
+  
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  #contact {
+    h2 {
+      font-size: 3rem;
+    }
   }
 }
 @media (max-width: 991px) {
@@ -582,10 +646,56 @@ span {
   .timeline-dot {
     left: 0;
   }
-
-  .projet-item img {
-    width: 312px;
+  .home-content {
+    h3 {
+      font-size: 2.5rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 3rem;
+    }
+    P {
+      font-size: 1.5rem;
+    }
   }
+  .home-img img {
+    width: 250px;
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  #education {
+    h2 {
+      font-size: 3rem;
+    }
+    h3,
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .projets {
+    h2 {
+      font-size: 3rem;
+    }
+    min-height: 0;
+  }
+
+  .projets-box {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  #contact {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
   .footer {
     padding: 2rem 3%;
   }
@@ -617,37 +727,271 @@ span {
     margin: 3rem 0;
     color: var(--text-color);
   }
-  .home {
-    flex-direction: column-reverse;
-    margin: 5rem 4rem;
-  }
-  .home-content h3 {
-    font-size: 2.6rem;
-  }
-  .home-content h1 {
-    font-size: 8rem;
-    margin-top: 3rem;
-  }
-  .home-content p {
-    max-width: 600px;
-    margin: 0 auto;
+
+  .home-content {
+    h3 {
+      font-size: 2.5rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 3rem;
+    }
+    P {
+      font-size: 1.5rem;
+    }
   }
   .home-img img {
-    width: 56vw;
+    width: 250px;
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 15px;
   }
-  .projet-item img {
-    width: 400px;
+
+  #education {
+    padding: 10px;
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3,
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .projets {
+    padding-bottom: 15px;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+    min-height: 0;
+  }
+
+  .projets-box {
+    gap: 10px;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  #contact {
+    h2 {
+      font-size: 2.5rem;
+    }
   }
 }
+@media (max-width: 770px) {
+  .projet-container {
+    height: 300px;
+  }
+  .projets-box h2 {
+    font-size: 1.6rem;
+  }
+  .navbar a {
+    font-size: 1.5rem;
+  }
+  .home-img img {
+    width: 300px;
+    height: auto;
+  }
+  .home-content {
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  #education {
+    padding: 10px;
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3,
+    h4 {
+      font-size: 1.5rem;
+    }
 
-.box{
-  color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  background-color: black;
- 
- 
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .projets {
+    padding-bottom: 15px;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+    min-height: 0;
+  }
+
+  .projets-box {
+    gap: 10px;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  #contact {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .projet-container {
+    height: 200px;
+  }
+  .projets-box h2 {
+    font-size: 1rem;
+  }
+  body {
+    padding: 5px;
+  }
+  svg {
+    width: 40px;
+  }
+  .navbar a {
+    font-size: 1.5rem;
+  }
+  .home-img img {
+    width: 300px;
+    height: auto;
+  }
+  .home-content {
+    margin: 0;
+
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .social-icons a {
+      width: 30px;
+      height: 30px;
+    }
+    .btn-group a {
+      width: 95px;
+      font-size: 1rem;
+    }
+  }
+
+  #education {
+    padding: 10px;
+    h2 {
+      font-size: 2.2rem;
+    }
+    h3,
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .projets {
+    padding-bottom: 15px;
+
+    h2 {
+      font-size: 2.2rem;
+    }
+    min-height: 0;
+  }
+
+  .projets-box {
+    gap: 10px;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  p,
+  a,
+  li {
+    font-size: 1rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  #contact {
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+}
+@media (max-width: 430px) {
+  body {
+    padding: 5px;
+  }
+  svg {
+    width: 40px;
+  }
+  .navbar a {
+    font-size: 1rem;
+  }
+  .home-img img {
+    width: 200px;
+    height: auto;
+  }
+  .home-content {
+    margin: 0;
+
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .social-icons a {
+      width: 30px;
+      height: 30px;
+    }
+    .btn-group a {
+      width: 95px;
+      font-size: 1rem;
+    }
+  }
+
+  #education {
+    padding: 10px;
+    h2 {
+      font-size: 2.2rem;
+    }
+    h3,
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+  .projets {
+    padding-bottom: 15px;
+
+    h2 {
+      font-size: 2.2rem;
+    }
+    min-height: 0;
+  }
+  .projet-container {
+    height: 150px;
+  }
+  .projets-box {
+    gap: 10px;
+  }
+  .projet-container h2 {
+    font-size: 7px;
+  }
+  p,
+  a,
+  li {
+    font-size: 1rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
 }

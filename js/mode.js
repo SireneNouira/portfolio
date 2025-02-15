@@ -27,11 +27,13 @@ function applyMode() {
     document.documentElement.style.setProperty("--bg-color", "#FFFFFF");
     document.documentElement.style.setProperty("--seconde-bg-color", "#F0F0F0");
     document.documentElement.style.setProperty("--text-color", "#000000");
+    document.documentElement.style.setProperty("--paillette-color", "#f4fefe");
   } else {
    // Mode sombre (réinitialiser les styles)
    pathElement.setAttribute("d", moonPath);
    document.documentElement.style.removeProperty("--bg-color");
    document.documentElement.style.removeProperty("--seconde-bg-color");
    document.documentElement.style.removeProperty("--text-color");
+   document.documentElement.style.removeProperty("--paillette-color");
  }
 }

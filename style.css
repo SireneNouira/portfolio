@@ -382,7 +382,7 @@ span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .projets .heading {
@@ -397,12 +397,11 @@ span {
   justify-content: center;
   align-items: center;
 }
-.projet-item {
+.projet-item img{
   width: 100%;
   height: 100%;
   border-radius: 5%;
   border: 3px solid var(--main-color);
-  background-image: url("photo.jpg");
   background-repeat: no-repeat;
   background-size: max(100%, 100%);
   background-size: cover;
@@ -655,7 +654,9 @@ canvas.overlay-canvas{
   .projet-container {
     height: 600px;
   }
-
+  .projet-container{
+    height: 400px;
+  }
   #contact {
     h2 {
       font-size: 5rem;

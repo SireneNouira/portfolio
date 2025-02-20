@@ -85,7 +85,10 @@ section {
   align-items: center;
   justify-content: center;
   gap: 15rem;
-  
+
+}
+.picture-mobile{
+  display: none;
 }
 .home-content {
   display: flex;
@@ -1252,6 +1255,3 @@ display: flex;
 
 }
 
-.picture-mobile{
-  display: none;
-}

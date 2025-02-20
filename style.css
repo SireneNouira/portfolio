@@ -85,6 +85,9 @@ section {
   justify-content: center;
   gap: 15rem;
 }
+.mobile-picture{
+  img{display: none;}
+}
 .picture-mobile {
   display: none;
 }

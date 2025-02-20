@@ -14,7 +14,6 @@
   --text-color: white;
   --main-color: #fb7ce6;
   --paillette-color: #6ea2fc;
-
 }
 html {
   font-size: 60%;
@@ -85,9 +84,8 @@ section {
   align-items: center;
   justify-content: center;
   gap: 15rem;
-
 }
-.picture-mobile{
+.picture-mobile {
   display: none;
 }
 .home-content {
@@ -137,9 +135,8 @@ span {
   font-weight: 500;
   line-height: 1.8;
   max-width: 1000px;
- 
 }
-.container-icons{
+.container-icons {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -152,28 +149,28 @@ span {
   aspect-ratio: 1;
   border-radius: 50%;
 
-  
   & > a {
     font: inherit;
     width: 64px;
     aspect-ratio: 1;
     display: inline-flex;
-  justify-content: center;
-  align-items: center; font-size: 2.5rem;
-  color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: var(--main-color);
     background: none;
     border-radius: 50%;
     border: 2px solid var(--main-color);
     transform: translate(var(--tx, 0), var(--ty, 0));
     cursor: pointer;
     transition: all 0.2s ease-out;
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
       color: var(--text-color);
-  transform: scale(1.3) translateY(-5px);
-  box-shadow: 0 0 25px var(--main-color);
-  background-color: var(--main-color);
+      transform: scale(1.3) translateY(-5px);
+      box-shadow: 0 0 25px var(--main-color);
+      background-color: var(--main-color);
     }
-    
   }
 }
 
@@ -201,7 +198,6 @@ span {
   justify-content: center;
   gap: 1.5rem;
   width: 100%;
-
 }
 .btn-group a:nth-of-type(2) {
   background-color: black;
@@ -288,7 +284,6 @@ span {
 .education {
   padding: 20px;
   background: var(--seconde-bg-color);
-
 }
 
 .education h2 {
@@ -381,7 +376,7 @@ span {
   background: var(--bg-color);
   padding: 0;
   padding-bottom: 10rem;
-  p{
+  p {
     text-align: center;
     font-size: 1.4rem;
     margin-bottom: 1rem;
@@ -392,7 +387,6 @@ span {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  
 }
 
 .projets .heading {
@@ -410,15 +404,14 @@ span {
   padding: 0rem 1rem;
   background-color: rgba(255, 255, 255, 0.1); /* Fond transparent */
   backdrop-filter: blur(10px); /* Effet de flou */
-  box-shadow: 0 4px 6px rgba(255, 120, 228, 0.356), 0 1px 3px rgba(0, 0, 0, 0.08); /* Ombre pour accentuer l'effet */
+  box-shadow: 0 4px 6px rgba(255, 120, 228, 0.356),
+    0 1px 3px rgba(0, 0, 0, 0.08); /* Ombre pour accentuer l'effet */
   border-radius: 5px; /* Optionnel : pour adoucir les coins */
- 
 }
 .projet-item {
   border-radius: 5px;
-
 }
-.projet-item img{
+.projet-item img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
@@ -455,7 +448,12 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(249, 203, 235, 0.5); /* Légère opacité pour un effet de "voile" */
+  background: rgba(
+    249,
+    203,
+    235,
+    0.5
+  ); /* Légère opacité pour un effet de "voile" */
   backdrop-filter: blur(10px); /* Applique un flou */
   transition: backdrop-filter 0.3s, opacity 0.3s;
 }
@@ -464,7 +462,6 @@ span {
   backdrop-filter: blur(0px); /* Enlève le flou */
   opacity: 0; /* Rend la couche invisible */
 }
-
 
 .contact {
   background-color: var(--seconde-bg-color);
@@ -645,83 +642,74 @@ span {
   color: var(--text-color);
 }
 
-
 /* Style pour les paillettes */
-canvas.overlay-canvas{
-  position:fixed;
-  top:0;
-  left:0;
+canvas.overlay-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
   pointer-events: none;
-  z-index:9999;
+  z-index: 9999;
 }
 
-
 @media (min-width: 1286px) {
-
   html {
     font-size: 70%;
-  } 
-   .home-content {
- 
+  }
+  .home-content {
     h1 {
       font-size: 5rem;
-
     }
-   
   }
   .home-img img {
     width: 500px;
     height: auto;
-  
   }
-  #education .heading{
-      font-size: 4rem;
-    }
-  #education{
- 
-    h3{
+  #education .heading {
+    font-size: 4rem;
+  }
+  #education {
+    h3 {
       font-size: 2rem;
     }
   }
 
-  #education .timeline-content{
-    h4{
+  #education .timeline-content {
+    h4 {
       font-size: 1.8rem;
     }
-    p{
+    p {
       font-size: 1.5rem;
     }
   }
 
-#projets .heading{
-  font-size: 4rem;
-}
+  #projets .heading {
+    font-size: 4rem;
+  }
   .projets-box h2 {
     font-size: 2.5rem;
   }
   .projet-container {
     height: 600px;
   }
-  .projet-container{
+  .projet-container {
     height: 400px;
   }
   #contact {
     h2 {
       font-size: 5rem;
     }
-ul, li{
-  font-size: 2rem;
-}
-h3{
-  font-size: 3rem;
-  padding-bottom: 20px;
-}
-p {
-  font-size: 2rem;
-}
+    ul,
+    li {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 3rem;
+      padding-bottom: 20px;
+    }
+    p {
+      font-size: 2rem;
+    }
   }
-
-
 }
 @media (max-width: 1285px) {
   html {
@@ -735,35 +723,28 @@ p {
   }
 
   .home-content {
- 
     h1 {
       font-size: 3rem;
-
     }
-   
   }
   .home-img img {
     width: 300px;
     height: auto;
-  
   }
 
   #education {
- 
     h2 {
       font-size: 3rem;
     }
-   h4{
-     font-size: 1.8rem;
-   }
+    h4 {
+      font-size: 1.8rem;
+    }
 
     p {
       font-size: 1.5rem;
     }
   }
   .projets {
-
-
     h2 {
       font-size: 3rem;
     }
@@ -771,7 +752,6 @@ p {
   }
 
   .projets-box {
-  
     h2 {
       font-size: 2.5rem;
     }
@@ -1080,178 +1060,171 @@ p {
   }
 }
 @media (max-width: 430px) {
-  section{
+  section {
     min-width: none;
     min-height: auto;
   }
-  .header{
+  .header {
     padding: 5px;
     position: relative;
   }
- .home{
-  gap: 0;
-  display: block;
-  padding: 0 0 10px 0;
-  p{
-    font-size: 8px;
-  };
-  h3{
-    font-size: 1rem;
-  }
-.mobile-picture{
-    display: flex;
-padding-bottom: 5px;
-.titres-home{
-  width: 50%;
-}
-    .picture-mobile{
-      display: flex;
-      width: 70px;
-      border-radius: 50%;
+  .home {
+    gap: 0;
+    display: block;
+    padding: 0 0 10px 0;
+    p {
+      font-size: 8px;
     }
-  }
-  .home-img{
-   
-    img{
-      display: none;
-    }
-  }
-  h1{
-    font-size: 1rem;
-  }
-  .container-icons{
-    width: 50px;
-    padding: 5px;
-    i,a{
+    h3 {
       font-size: 1rem;
-      width: 20px;
-      height: auto;
-      display: flex;
-      justify-content: center;
     }
-    svg{
-      width: 10px;
+    .home-img {
+      display: none;
+      img {
+        display: none;
+      }
+    }
+    .mobile-picture {
+      display: flex;
+      padding-bottom: 5px;
+      .titres-home {
+        width: 50%;
+      }
+      .picture-mobile {
+        display: flex;
+        width: 70px;
+        border-radius: 50%;
+      }
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+    .container-icons {
+      width: 50px;
+      padding: 5px;
+      i,
+      a {
+        font-size: 1rem;
+        width: 20px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+      }
+      svg {
+        width: 10px;
+      }
+    }
+    .social-icons {
+      width: 50px;
+    }
+    .btn-group {
+      width: 100px;
+      justify-content: space-between;
+      gap: 1rem;
+      a {
+        font-size: 0.8rem;
+      }
+      .btn {
+        padding: 3px;
+        font-weight: 100;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
     }
   }
-.social-icons{
-  width: 50px;
-}
-.btn-group{
-    width: 100px;
-    justify-content: space-between;
-    gap: 1rem;
-    a{
-     
+
+  svg {
+    width: 30px;
+  }
+
+  #education {
+    .timeline-item {
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1rem;
+      margin: 0 0 10px 0;
+    }
+    .timeline-dot {
+      width: 10px;
+      height: 10px;
+    }
+    .timeline-date {
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+    .timeline-content {
+      padding: 10px;
+      h4 {
+        font-size: 1rem;
+        font-weight: 100;
+        padding-bottom: 2px;
+      }
+      p {
+        font-size: 0.8rem;
+        line-height: normal;
+      }
+    }
+  }
+
+  .projets {
+    .heading {
+      margin: 10px 0 20px 0;
+    }
+    h2 {
+      font-size: 1rem;
+      margin: 10px;
+      padding: 0;
+    }
+    p {
       font-size: 0.8rem;
     }
-   .btn{
-padding: 3px;
-font-weight: 100;
-justify-content: center;
-align-items: center;
-display: flex;
-   }
-  }
- 
- }
-
- svg{
-  width: 30px;
- }
-
- #education{
-.timeline-item{
-  margin: 0;
-}
-
-  h2{
-    font-size: 1rem;
-    margin: 0 0 10px 0;
-  }
-.timeline-dot{
-  width:  10px;
-  height: 10px;
-}
-.timeline-date{
-  h3{
-    font-size: 0.8rem;
-  }
-}
-.timeline-content{
-  padding: 10px;
-  h4{
-    font-size: 1rem;
-    font-weight: 100;
-    padding-bottom: 2px;
-  }
-  p{
-    font-size: 0.8rem;
-    line-height: normal;
-   
-  }
- }
-}
-
-
-
-.projets{
- 
-  .heading{
-    margin: 10px 0 20px 0;
-  }
-  h2{
-    font-size: 1rem;
-    margin:10px;
-    padding: 0;
-  }
-  p{
-    font-size: 0.8rem;
-  }
-.blur-overlay{
-  display: none;
-}
-.projet-container{
-  width: 90%;
- margin: 8px;
-}
-
-
+    .blur-overlay {
+      display: none;
+    }
+    .projet-container {
+      width: 90%;
+      margin: 8px;
+    }
   }
 
-  #contact{
-    .contact-container{
+  #contact {
+    .contact-container {
       gap: 2px;
     }
     padding: 10px;
-    h2{    
+    h2 {
       font-size: 1rem;
       margin: 2px;
     }
-    li{
+    li {
       font-size: 1rem;
     }
-    a{
+    a {
       font-size: 1rem;
     }
-    .contact-visual{
-      h3{
+    .contact-visual {
+      h3 {
         font-size: 1rem;
       }
-      p{
+      p {
         font-size: 0.8rem;
       }
-      .paper-plane-animation{
+      .paper-plane-animation {
         display: none;
       }
     }
   }
 
- .footer{
-  padding: 10px;
-  
-  .copyright{
-    font-size: 0.8rem;}
- }
+  .footer {
+    padding: 10px;
 
+    .copyright {
+      font-size: 0.8rem;
+    }
+  }
 }
-

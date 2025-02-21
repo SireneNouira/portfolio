@@ -1163,8 +1163,7 @@ section{
 
   
   #education {
-  
-      min-height: 100vh;
+    padding: 10px 0;
    
     .timeline-item {
       margin: 0;

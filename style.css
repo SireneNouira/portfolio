@@ -1065,7 +1065,7 @@ canvas.overlay-canvas {
 @media (max-width: 430px) {
 
 section{
-  min-height: 80vh;
+  min-height: auto;
 }
  
   .header {

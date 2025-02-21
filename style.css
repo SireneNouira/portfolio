@@ -1067,7 +1067,17 @@ canvas.overlay-canvas {
 section{
   min-height: auto;
 }
+.mobile-picture {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
  
+  .picture-mobile {
+    display: flex;
+    width: 80px;
+    border-radius: 50%;
+  }
+}
   .header {
     padding: 5px;
     position: relative;
@@ -1102,17 +1112,7 @@ section{
         display: none;
       }
     }
-    .mobile-picture {
-      display: flex;
-      justify-content: center;
-      padding: 5px;
-     
-      .picture-mobile {
-        display: flex;
-        width: 80px;
-        border-radius: 50%;
-      }
-    }
+   
 
     h1 {
       font-size: 1rem;
@@ -1135,13 +1135,13 @@ section{
       }
     }
     .social-icons {
-      width: 25px;
+      width: 40px;
     }
     .btn-group {
       gap: 1rem;
-      padding: 10px;
+      padding: 10px 10px 30px 10px;
       a {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         width: 50px;
       }
       .btn {
@@ -1170,7 +1170,7 @@ section{
     }
 
     h2 {
-      font-size: 1rem;
+      font-size: 1.5rem;
       margin: 15px;
     }
     .timeline-dot {
@@ -1179,7 +1179,7 @@ section{
     }
     .timeline-date {
       h3 {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
       }
     }
     .timeline-content {
@@ -1193,7 +1193,7 @@ section{
         padding-bottom: 2px;
       }
       p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         line-height: normal;
       }
     }
@@ -1204,6 +1204,7 @@ section{
   .projets {
     .heading {
       margin: 15px;
+      font-size: 1.5rem;
     }
     img{
       width: 210px;
@@ -1214,7 +1215,7 @@ section{
       padding: 0;
     }
     p {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
     .blur-overlay {
       display: none;
@@ -1248,7 +1249,7 @@ section{
         font-size: 1rem;
       }
       p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
       }
       .paper-plane-animation {
         display: none;
